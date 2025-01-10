@@ -12,7 +12,7 @@ except Exception as e:
 
 # Load the tokenizer
 try:
-    with open('tokenizer.pickle', 'rb') as handle:
+    with open('text_gen_pr/tokenizer.pickle', 'rb') as handle:
         tokenizer = pickle.load(handle)
 except Exception as e:
     st.error(f"Error loading tokenizer: {e}")
