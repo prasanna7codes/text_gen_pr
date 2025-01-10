@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load the LSTM Model
 try:
-    model = load_model('next_word_lstm.h5')
+    model = load_model('text_gen_pr/next_word_lstm.h5')
 except Exception as e:
     st.error(f"Error loading model: {e}")
 
